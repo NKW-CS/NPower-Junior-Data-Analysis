@@ -7,21 +7,29 @@
 * **Diane King 6** (@DKTODesigns) - Project Documentation & Presentation
 
 * **My Part** *
-* 🛠️ Data Science & Machine Learning Pipeline
+🛠️ Data Science & Machine Learning Pipeline
 
-### 1. Data Cleaning & Preprocessing
-* **Outlier Detection & Handling:** Identified anomalies in financial indicators (like extreme loan amounts or credit scores) using statistical methods and handled them to prevent model bias.
-* **Data Wrangling:** Encoded categorical variables, and scaled features for model readiness.
+## 🛠️ My Contributions: Data Science & Machine Learning Pipeline
+*Section authored by Nuha Warsi (@NKW-CS)*
 
-### 2. Exploratory Data Analysis (EDA)
-* **Correlation Analysis:** Analyzed relationships between borrower financial indicators and default risk to find the strongest predictors.
-* **Regression Analysis:** Explored linear and logistic relationships among key lending variables.
-* **Visualizations:** Generated distribution plots, heatmaps, and trend lines to understand borrower behavior.
+### 1. Descriptive Analytics & Outlier Identification
+* **Statistical Profiling:** Conducted thorough summary statistics using `df.describe()` on key financial features including `income`, `loan_amount`, `credit_score`, `property_value`, and `ltv`.
+* **Outlier & Anomaly Detection:** Identified massive skewness and anomalies in the dataset—specifically noting extreme max outliers in borrower `income` ($578,580) and an unrealistic maximum `ltv` (Loan-to-Value) ratio of 7,831.25%.
 
-### 3. Model Training & Predictive Analytics
-* **Dataset Prediction:** Split the data into training and testing sets to evaluate model generalization.
-* **Model Training:** Trained machine learning models (such as Logistic Regression ]) to predict loan default risks.
-* **Testing & Evaluation:** Tested model performance using metrics like Accuracy, Precision, Recall, and F1-Score.
+### 2. Exploratory Data Analysis (EDA) & Segmentation
+* **Risk Class Distributions:** Evaluated the portfolio's baseline default rate, establishing that 24.50% of the observations represent defaults (`status = 1`).
+* **Categorical Segmentation:** Aggregated and compared average loan volumes across loan programs, identifying that Type 1 (Conventional) and Type 3 (VA) loans carry significantly higher average amounts (~$340k+) compared to Type 2 (FHA) loans (~$258k).
+* **Correlation Analysis:** Measured linear relationships against borrower income, discovering moderate positive correlations with `loan_amount` (0.44) and `property_value` (0.39), alongside a negative correlation with debt-to-income ratios (`dtir1` at -0.25).
+* **Advanced Regressions & Data Visualization:** Built tailored Seaborn (`sns.regplot`) and Matplotlib visuals, including default rates by loan purpose, box plots isolating debt-to-income spreads, and regression lines mapping `property_value` vs. `loan_amount` and `income` vs. `loan_amount`.
+
+### 3. Predictive Modeling & Model Testing
+Developed and evaluated multi-variable regression models to predict `loan_amount` based on a feature subset of `['income', 'credit_score', 'status', 'rate_of_interest', 'ltv', 'dtir1']`.
+* **Baseline Linear Regression:** Achieved an initial baseline $R^2$ score of **0.2296**.
+* **Feature Engineering Pipeline:** Engineered a Scikit-Learn Pipeline combining `StandardScaler` and 2nd-degree `PolynomialFeatures` with a Linear Regression estimator, successfully boosting model explanation capacity to an $R^2$ of **0.3532**.
+* **Train-Test Validation with Regularization:** Split the dataset using an 85/15 train-test split (122,385 training rows / 21,598 testing rows). Evaluated regularized models against the test set:
+  * **Linear Ridge Regression ($\alpha=0.1$):** Test $R^2$ of **0.2265**
+  * **Polynomial Ridge Regression (Degree 2, $\alpha=0.1$):** Test $R^2$ of **0.3284**
+
 
 # Loan Default Risk Analysis Dashboard
 
