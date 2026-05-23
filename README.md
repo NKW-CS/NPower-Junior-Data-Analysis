@@ -1,3 +1,11 @@
+## Team Contributions
+* **Nuha Warsi** (@NKW-CS) - Exploratory Data Analysis (EDA)
+* **Divya Patel** (@pateldiya174-star/Selenium) - Exploratory Data Analysis (EDA)
+* **Medhanit Melkie** (@ICode-Medi) - Data Cleaning & Data Wrangling
+* **Edwin Palacios** (@elpalaciosc) - Data Cleaning & Data Wrangling
+* **Froila** (@FroilaStephanie) - Dashboard & Visualization
+* **Diane King 6** (@DKTODesigns) - Project Documentation & Presentation
+
 # Loan Default Risk Analysis Dashboard
 
 ## Project Overview
