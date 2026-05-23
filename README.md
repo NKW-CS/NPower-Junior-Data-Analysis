@@ -6,6 +6,23 @@
 * **Froila** (@FroilaStephanie) - Dashboard & Visualization
 * **Diane King 6** (@DKTODesigns) - Project Documentation & Presentation
 
+* **My Part** *
+* 🛠️ Data Science & Machine Learning Pipeline
+
+### 1. Data Cleaning & Preprocessing
+* **Outlier Detection & Handling:** Identified anomalies in financial indicators (like extreme loan amounts or credit scores) using statistical methods and handled them to prevent model bias.
+* **Data Wrangling:** Encoded categorical variables, and scaled features for model readiness.
+
+### 2. Exploratory Data Analysis (EDA)
+* **Correlation Analysis:** Analyzed relationships between borrower financial indicators and default risk to find the strongest predictors.
+* **Regression Analysis:** Explored linear and logistic relationships among key lending variables.
+* **Visualizations:** Generated distribution plots, heatmaps, and trend lines to understand borrower behavior.
+
+### 3. Model Training & Predictive Analytics
+* **Dataset Prediction:** Split the data into training and testing sets to evaluate model generalization.
+* **Model Training:** Trained machine learning models (such as Logistic Regression ]) to predict loan default risks.
+* **Testing & Evaluation:** Tested model performance using metrics like Accuracy, Precision, Recall, and F1-Score.
+
 # Loan Default Risk Analysis Dashboard
 
 ## Project Overview
