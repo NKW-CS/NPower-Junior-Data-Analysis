@@ -18,7 +18,7 @@
 
 ### 2. Exploratory Data Analysis (EDA) & Segmentation
 * **Risk Class Distributions:** Evaluated the portfolio's baseline default rate, establishing that 24.50% of the observations represent defaults (`status = 1`).
-* **Categorical Segmentation:** Aggregated and compared average loan volumes across loan programs, identifying that Type 1 (Conventional) and Type 3 (VA) loans carry significantly higher average amounts (~$340k+) compared to Type 2 (FHA) loans (~$258k).
+* **Categorical Segmentation:** Aggregated and compared average loan volumes across loan programs, identifying that Type 1 (Conventional) and Type 3 (VA) loans carry significantly higher average amounts (*$340k+) compared to Type 2 (FHA) loans (*$258k).
 * **Correlation Analysis:** Measured linear relationships against borrower income, discovering moderate positive correlations with `loan_amount` (0.44) and `property_value` (0.39), alongside a negative correlation with debt-to-income ratios (`dtir1` at -0.25).
 * **Advanced Regressions & Data Visualization:** Built tailored Seaborn (`sns.regplot`) and Matplotlib visuals, including default rates by loan purpose, box plots isolating debt-to-income spreads, and regression lines mapping `property_value` vs. `loan_amount` and `income` vs. `loan_amount`.
 
